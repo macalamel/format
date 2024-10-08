@@ -84,6 +84,7 @@ class Color:
         return None
 
 if __name__ == "__main__":
+    # teste unitaire
     c=Color()
     print(c.color("hey","yellow"))
     c._print('hey','bla')
