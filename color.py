@@ -48,16 +48,6 @@ class Color:
         #output: existence (bool)
         """
         return color in self.dico_color.keys()
-    
-    def error(self, type: str) -> None:
-        """
-        fonction pour la gestion d'erreur
-        #input: type de l'erreur (srt)
-        #output: None
-        """
-        print(self.dico_color[self.red]+f"Error: {type} \nfin du programme...{self.reset}")
-        exit()
-        return None
 
     
     def color(self, text: str,color: str = "blanc") -> str:
@@ -83,9 +73,11 @@ class Color:
         
         return None
 
+
+
 if __name__ == "__main__":
     # teste unitaire
     c=Color()
     print(c.color("hey","yellow"))
-    c._print('hey','bla')
     c._print('hey',"blue")
+    c._print('hey','bla')
